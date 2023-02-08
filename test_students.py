@@ -56,7 +56,7 @@ class TestStudent(unittest.TestCase):
             mocked_get.return_value.ok = False
 
             schedule = self.student.course_schedule()
-            self.assertEqual(schedule, "Something went wrong")
+            self.assertEqual(schedule, "Something went wrong with the request!")
             
 
 if __name__ == "__main__":
